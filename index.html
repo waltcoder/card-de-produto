@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="font-sans antialiased">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Este projeto faz parte de uma séries de desafios proposto pela Rocketseat! com o intuito de ajudar a criar um portfólio completo, e ainda impulsionar a praticar programação toda semana."
+    />
+    <meta content="Walt" name="author" />
+    <meta
+      name="keywords"
+      content="bora codar, desafio, portfolio, programacao"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Bora Codar um card de produto | Walt" />
+    <meta property="og:image" content="./.github/preview.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="2400" />
+    <meta property="og:image:height" content="1260" />
+    <meta property="og:image:secure_url" content="./.github/preview.png" />
+    <meta
+      property="og:description"
+      content="Este projeto faz parte de uma séries de desafios proposto pela Rocketseat! com o intuito de ajudar a criar um portfólio completo, e ainda impulsionar a praticar programação toda semana."
+    />
+    <meta name="twitter:image" content="./.github/preview.png" />
+    <meta name="twitter:image:src" content="./.github/preview.png" />
+    <meta name="twitter:site" content="@return.walt" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@return.walt" />
+    <meta name="twitter:image:width" content="2400" />
+    <meta name="twitter:image:height" content="1260" />
+    <meta name="theme-color" content="#121214" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              secondary: "#271A45",
+              primary: "#D9CDF7",
+            },
+            fontFamily: {
+              sans: ["Lato", "ui-sans-serif", "system-ui"],
+              serif: ["Crimson Pro", "ui-serif", "Georgia"],
+              mono: ["ui-monospace", "SFMono-Regular"],
+              display: ["Oswald"],
+              body: ['"Open Sans"'],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-primary flex h-screen w-screen items-center justify-center px-4 md:mx-0"
+  >
+    <div class="flex flex-col items-center gap-3 md:flex-row">
+      <div class="relative">
+        <img
+          src="./assets/vector.svg"
+          class="icon absolute right-14 z-50 cursor-pointer"
+          onclick="toggleMode()"
+        />
+        <img
+          src="./assets/sofa.png"
+          alt="Sofá, cor de rosa clara, com sombra na parte de baixo"
+          title="Sofá, cor de rosa clara, com sombra na parte de baixo"
+          loading="lazy"
+          class="sofa w-[500px]"
+        />
+      </div>
+      <div class="flex flex-col gap-5">
+        <div class="flex flex-col gap-3">
+          <span class="text-[10px]">CÓDIGO: 42404</span>
+          <h2 class="font-serif text-2xl font-semibold sm:text-[32px]">
+            Sofá Margot II - Rosé
+          </h2>
+          <span class="text-base">R$ 4.000</span>
+        </div>
+        <button
+          type="button"
+          class="border-secondary text-secondary w-fit rounded-full border px-4 py-2 text-xs"
+          title="Adicionar sofá na cesta"
+        >
+          ADICIONAR À CESTA
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
